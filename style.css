@@ -333,7 +333,7 @@ body{
     background-color: #fff;
     border-radius: 10px;
     padding: 5px;
-    width: 650px;
+    width: 350px;
     position: relative;
     overflow: hidden;
     box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
@@ -353,13 +353,20 @@ body{
     content: "";
     position: absolute;
     height: 300%;
-    width: 80px;
+    width: 50px;
     background: #262626;
     top: -60px;
     left: -125px;
     z-index: 0;
     transform: rotate(17deg);
   }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+  }
+  
    
 }
 
