@@ -369,4 +369,13 @@ body{
   
    
 }
-
+@media (max-width: 768px) {
+  .navbar .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 5;
+  }
+  .image{
+    width: 50px;
+  }
+}
