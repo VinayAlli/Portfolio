@@ -16,36 +16,35 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8ee3dd930.js"></script>
-    
 
     <title>Vinay Alli</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#"><img class="image" src="logo.png" alt="" sizes="" srcset="" width="5%" heigh="1%"></a>
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="#wrapper">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: white;" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+  <div class="container">
+    <a class="navbar-brand" href="#"><img class="image" src="logo.png" alt="" sizes="" srcset="" width="5%" heigh="1%"></a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="#wrapper">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: white;" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
     <div id="wrapper" class="wrapper">
       <div class="user-card">
@@ -284,9 +283,27 @@
   </div>
 
 </div>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i style="color: white;" class="fa fa-long-arrow-up" aria-hidden="true"></i></button>
 <hr>
 <h5 style="text-align: center;">Thank You <i class="fa fa-heart" aria-hidden="true"></i></h5>
-      
+<script>
+  let mybutton = document.getElementById("myBtn");
+  
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  </script>      
 </body>
 </html>
