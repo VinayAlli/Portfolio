@@ -1,310 +1,745 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">  
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c8ee3dd930.js"></script>
-
-    <title>Vinay Alli</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinay Viswanadh Alli | Senior Software Developer</title>
+  <meta name="description" content="Portfolio of Vinay Alli — Senior Software Developer specializing in Java, Spring Boot, Microservices, Kafka, AWS, and React." />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img class="image" src="logo.png" alt="" sizes="" srcset="" width="5%" heigh="1%"></a>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" style="color: white;" href="#wrapper">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: white;" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: white;" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" style="color: white;" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<div class="app" data-theme="dark" data-lang="en">
+    <!-- Ambient canvas -->
+    <canvas id="fx" aria-hidden="true"></canvas>
 
-    <div id="wrapper" class="wrapper">
-      <div class="user-card">
-        <div class="user-card-img">
-          <img src="VINAY1.jpeg" alt="">
-        </div>
-        <div class="user-card-info">
-          <p>HELLO EVERYBODY, I AM </p>
-          <h2>Vinay Viswanadh Alli</h2>
-          
-          <p>I am passionate about cutting-edge technology. Not only that, I am a front-end developer and AI aspirant. </p>
-          <p>I am proficient in C, C++, and Python. I'll be thrilled to land an internship where I can develop professionally and learn new things while working at a company.</p>
-          <br>
-          <a style="text-decoration: none;" href="#contact" ><button type="submit" style="background-color:rgb(0, 183, 255); color: white; border-radius: 1.5rem;"><i class="fa fa-laptop" aria-hidden="true"></i> Hire me</button> </a>
-          <a href="VinayAlli_WebDeveloper.pdf" download><button type="submit" style="background-color:rgb(0, 183, 255); color: white; border-radius: 1.5rem;"><i class="fa fa-file" aria-hidden="true"></i> Get Resume</button></a>
-        </div>
-      </div>
-    </div>
-   
-    <!-- SKILLS CARD -->
+    <!-- Top bar -->
+    <header class="topbar" id="topbar">
+        <a class="brand" href="#home" aria-label="Go to top">
+            <span class="brandMark"><i class="fa-solid fa-terminal"></i></span>
+            <span class="brandText">
+                <span class="brandName">Vinay Alli</span>
+                <span class="brandSub" data-i18n="brandSub"
+                    >Full-Stack Dev</span
+                >
+            </span>
+        </a>
 
-   
-  <div class="skills" id="skills">
-    <h2 class="fw-bold fs-1">
-      My
-      <span class="b-class-secondary" style="color: blueviolet;">skills </span>
-    </h2>
-    <p class="sec-icon"><i class="fa fa-terminal"  aria-hidden="true"></i></p>
-    <div class="first-set">
-      <div>
-        <div class="container">
-          <div class="card">
-            <div class="title">
-              <h3>Programming</h3>
+        <nav class="nav" aria-label="Primary">
+            <a class="navLink active" href="#home" data-section="home"
+                ><i class="fa-solid fa-house"></i
+                ><span data-i18n="navHome">Home</span></a
+            >
+            <a class="navLink" href="#about" data-section="about"
+                ><i class="fa-solid fa-user-astronaut"></i
+                ><span data-i18n="navAbout">About</span></a
+            >
+            <a class="navLink" href="#skills" data-section="skills"
+                ><i class="fa-solid fa-bolt"></i
+                ><span data-i18n="navSkills">Skills</span></a
+            >
+            <a class="navLink" href="#work" data-section="work"
+                ><i class="fa-solid fa-briefcase"></i
+                ><span data-i18n="navWork">Work</span></a
+            >
+            <a class="navLink" href="#projects" data-section="projects"
+                ><i class="fa-solid fa-layer-group"></i
+                ><span data-i18n="navProjects">Projects</span></a
+            >
+            <a class="navLink" href="#contact" data-section="contact"
+                ><i class="fa-solid fa-paper-plane"></i
+                ><span data-i18n="navContact">Contact</span></a
+            >
+        </nav>
+
+        <div class="controls">
+            <button class="iconBtn" id="langBtn" type="button" title="Language">
+                <i class="fa-solid fa-language"></i
+                ><span class="miniLabel" id="langLabel">HI</span>
+            </button>
+            <button class="iconBtn" id="themeBtn" type="button" title="Theme">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+            </button>
+            <button
+                class="iconBtn"
+                id="menuBtn"
+                type="button"
+                title="Menu"
+                aria-expanded="false"
+                aria-controls="drawer"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile drawer -->
+    <aside class="drawer" id="drawer" aria-hidden="true">
+        <div class="drawerTop">
+            <div class="drawerTitle" data-i18n="drawerTitle">Quick Nav</div>
+            <button
+                class="iconBtn ghost"
+                id="closeDrawer"
+                type="button"
+                title="Close"
+            >
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="drawerLinks">
+            <a class="drawerLink" href="#home"
+                ><i class="fa-solid fa-house"></i
+                ><span data-i18n="navHome">Home</span></a
+            >
+            <a class="drawerLink" href="#about"
+                ><i class="fa-solid fa-user-astronaut"></i
+                ><span data-i18n="navAbout">About</span></a
+            >
+            <a class="drawerLink" href="#skills"
+                ><i class="fa-solid fa-bolt"></i
+                ><span data-i18n="navSkills">Skills</span></a
+            >
+            <a class="drawerLink" href="#work"
+                ><i class="fa-solid fa-briefcase"></i
+                ><span data-i18n="navWork">Work</span></a
+            >
+            <a class="drawerLink" href="#projects"
+                ><i class="fa-solid fa-layer-group"></i
+                ><span data-i18n="navProjects">Projects</span></a
+            >
+            <a class="drawerLink" href="#contact"
+                ><i class="fa-solid fa-paper-plane"></i
+                ><span data-i18n="navContact">Contact</span></a
+            >
+        </div>
+
+        <div class="drawerFoot">
+            <div class="miniCard">
+                <div class="miniCardTitle" data-i18n="drawerTipTitle">
+                    Pro Tip
+                </div>
+                <div class="miniCardText" data-i18n="drawerTipText">
+                    Tap a project card to open the case-study modal.
+                </div>
             </div>
-            <div class="content">
-              <img src="programming.png"></img>
+        </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- HERO -->
+        <section class="section hero" id="home">
+            <div class="heroGrid">
+                <div class="heroLeft">
+                    <div class="pill">
+                        <i class="fa-solid fa-sparkles"></i>
+                        <span data-i18n="heroPill"
+                            >Available for freelance + product builds</span
+                        >
+                    </div>
+
+                    <h1 class="h1">
+                        <span class="muted" data-i18n="heroHi">Hi, I'm</span>
+                        <span class="shine" id="nameType">Vinay Alli</span>
+                        <span class="cursor" aria-hidden="true">|</span>
+                    </h1>
+
+                    <p class="sub" data-i18n="heroSub">
+                        I build fast, premium web apps - clean UI, sharp UX, and
+                        reliable backend. Obsessed with performance & polish.
+                    </p>
+
+                    <div class="ctaRow">
+                        <a class="btn primary magnetic" href="#projects">
+                            <i class="fa-solid fa-eye"></i
+                            ><span data-i18n="ctaProjects"
+                                >Explore Projects</span
+                            >
+                        </a>
+                        <button
+                            class="btn secondary magnetic"
+                            id="copyEmail"
+                            type="button"
+                        >
+                            <i class="fa-solid fa-copy"></i
+                            ><span data-i18n="ctaCopyEmail">Copy Email</span>
+                        </button>
+                        <a class="btn ghost magnetic" href="#contact">
+                            <i class="fa-solid fa-comments"></i
+                            ><span data-i18n="ctaTalk">Let's Talk</span>
+                        </a>
+                    </div>
+
+                    <div class="heroMeta">
+                        <div class="metaCard">
+                            <div class="metaIcon">
+                                <i class="fa-solid fa-gauge-high"></i>
+                            </div>
+                            <div>
+                                <div class="metaTitle" data-i18n="metaTitle1">
+                                    Performance
+                                </div>
+                                <div class="metaText" data-i18n="metaText1">
+                                    Core Web Vitals focused builds
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metaCard">
+                            <div class="metaIcon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <div class="metaTitle" data-i18n="metaTitle2">
+                                    Security
+                                </div>
+                                <div class="metaText" data-i18n="metaText2">
+                                    Auth, RBAC, secure patterns
+                                </div>
+                            </div>
+                        </div>
+                        <div class="metaCard">
+                            <div class="metaIcon">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <div class="metaTitle" data-i18n="metaTitle3">
+                                    Design
+                                </div>
+                                <div class="metaText" data-i18n="metaText3">
+                                    Micro-interactions + crisp UI
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="socialRow">
+                        <a
+                            class="soc"
+                            href="https://github.com/VinayAlli"
+                            target="_blank"
+                            rel="noopener"
+                            title="GitHub"
+                            ><i class="fa-brands fa-github"></i
+                        ></a>
+                        <a
+                            class="soc"
+                            href="https://www.linkedin.com/in/vinayalli/"
+                            target="_blank"
+                            rel="noopener"
+                            title="LinkedIn"
+                            ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                        <a
+                            class="soc"
+                            href="https://vinayalli.github.io/Portfolio/"
+                            target="_blank"
+                            rel="noopener"
+                            title="Portfolio"
+                            ><i class="fa-solid fa-globe"></i
+                        ></a>
+                        <a
+                            class="soc"
+                            href="https://medium.com/@allivinay2001"
+                            target="_blank"
+                            rel="noopener"
+                            title="Medium"
+                            ><i class="fab fa-medium"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <div class="heroRight">
+                    <div class="profileCard">
+                        <div class="profileTop">
+                            <div
+                                class="avatar"
+                                role="img"
+                                aria-label="Profile image"
+                            ></div>
+                            <div class="profileInfo">
+                                <div class="profileName">Vinay Alli</div>
+                                <div
+                                    class="profileRole"
+                                    data-i18n="profileRole"
+                                >
+                                    Full-Stack • MERN • UI Engineering
+                                </div>
+                                <div class="chips">
+                                    <span class="chip"><i class="fa-brands fa-java"></i>Java</span
+                                    >
+                                    <span class="chip"><i class="fa-solid fa-leaf"></i>Spring Boot</span
+                                    >
+                                    <span class="chip"><i class="fa-solid fa-wave-square"></i>Kafka</span
+                                    >
+                                    <span class="chip"><i class="fa-brands fa-aws"></i>AWS</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="stats">
+                            <div class="stat">
+                                <div class="statNum" data-count="4">0</div>
+                                <div class="statLbl" data-i18n="stat1">Companies</div>
+                            </div>
+                            <div class="stat">
+                                <div class="statNum" data-count="7">0</div>
+                                <div class="statLbl" data-i18n="stat2">Years experience</div>
+                            </div>
+                            <div class="stat">
+                                <div class="statNum" data-count="3">0</div>
+                                <div class="statLbl" data-i18n="stat3">Domains</div>
+                            </div>
+                        </div>
+
+                        <div class="miniTimeline">
+                            <div class="miniRow">
+                                <span class="dot"></span
+                                ><span data-i18n="mini1"
+                                    >Spring Boot microservices</span
+                                >
+                            </div>
+                            <div class="miniRow">
+                                <span class="dot"></span
+                                ><span data-i18n="mini2"
+                                    >Secure REST APIs (JWT/RBAC)</span
+                                >
+                            </div>
+                            <div class="miniRow">
+                                <span class="dot"></span
+                                ><span data-i18n="mini3"
+                                    >AWS deploy + monitoring</span
+                                >
+                            </div>
+                        </div>
+
+                        <div class="profileActions">
+                            <a class="btn tiny primary magnetic" href="#contact"
+                                ><i class="fa-solid fa-paper-plane"></i
+                                ><span data-i18n="hireBtn">Hire Me</span></a
+                            >
+                            <button
+                                class="btn tiny ghost magnetic"
+                                id="openResume"
+                                type="button"
+                            >
+                                <i class="fa-solid fa-file-arrow-down"></i
+                                ><span data-i18n="resumeBtn">Resume</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="hintCard">
+                        <i class="fa-solid fa-hand-pointer"></i>
+                        <span data-i18n="hintText"
+                            >Hover cards - subtle tilt + glow. Tap projects for
+                            details.</span
+                        >
+                    </div>
+                </div>
             </div>
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="container">
-          <div class="card">
-            <div class="title">
-              <h3>Web</h3>
+
+            <div class="scrollHint">
+                <div class="mouse"><span class="wheel"></span></div>
+                <span data-i18n="scrollDown">Scroll</span>
             </div>
-            <div class="content">
-              <img src="web.png"></img>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section" id="about">
+            <div class="sectionHead">
+                <div class="kicker">
+                    <i class="fa-solid fa-user-astronaut"></i
+                    ><span data-i18n="aboutKicker">About</span>
+                </div>
+                <h2 class="h2">
+                    <span data-i18n="aboutTitle">Engineering with taste</span>
+                </h2>
+                <p class="lead" data-i18n="aboutLead">
+                    I love building products that feel expensive: crisp
+                    typography, strong spacing, meaningful motion, and robust
+                    code.
+                </p>
             </div>
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="container">
-          <div class="card">
-            <div class="title">
-              <h3>AI - ML</h3>
+
+            <div class="aboutGrid">
+                <div class="card lift">
+                    <div class="cardTitle">
+                        <i class="fa-solid fa-compass-drafting"></i
+                        ><span data-i18n="aboutCard1T">Product mindset</span>
+                    </div>
+                    <p class="cardText" data-i18n="aboutCard1D">
+                        I don't just “code screens”. I ship flows: onboarding,
+                        auth, payments, admin, edge-cases.
+                    </p>
+                    <div class="cardFoot">
+                        <span class="miniPill"
+                            ><i class="fa-solid fa-check"></i
+                            ><span data-i18n="aboutMini1">Clean UX</span></span
+                        >
+                        <span class="miniPill"
+                            ><i class="fa-solid fa-check"></i
+                            ><span data-i18n="aboutMini2">Fast UI</span></span
+                        >
+                        <span class="miniPill"
+                            ><i class="fa-solid fa-check"></i
+                            ><span data-i18n="aboutMini3"
+                                >Maintainable</span
+                            ></span
+                        >
+                    </div>
+                </div>
+
+                <div class="card lift">
+                    <div class="cardTitle">
+                        <i class="fa-solid fa-screwdriver-wrench"></i
+                        ><span data-i18n="aboutCard2T">Stack comfort</span>
+                    </div>
+                    <div class="stack">
+                        <div class="stackRow">
+                            <span class="stackKey">Frontend</span
+                            ><span class="stackVal"
+                                >React, Vite, UI systems</span
+                            >
+                        </div>
+                        <div class="stackRow">
+                            <span class="stackKey">Backend</span
+                            ><span class="stackVal"
+                                >Node/Express, APIs, auth</span
+                            >
+                        </div>
+                        <div class="stackRow">
+                            <span class="stackKey">DB</span
+                            ><span class="stackVal"
+                                >MongoDB, Postgres basics</span
+                            >
+                        </div>
+                        <div class="stackRow">
+                            <span class="stackKey">Ops</span
+                            ><span class="stackVal"
+                                >Cloud deploy, CI basics</span
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card lift codeCard">
+                    <div class="codeTop">
+                        <span class="dotWin red"></span
+                        ><span class="dotWin yellow"></span
+                        ><span class="dotWin green"></span>
+                        <span class="codeTitle" data-i18n="codeTitle"
+                            >Today's build philosophy</span
+                        >
+                    </div>
+                    <pre class="codeBlock"><code id="codeSnippet"></code></pre>
+                    <button
+                        class="btn tiny secondary magnetic"
+                        id="copySnippet"
+                        type="button"
+                    >
+                        <i class="fa-solid fa-copy"></i
+                        ><span data-i18n="copySnippet">Copy snippet</span>
+                    </button>
+                </div>
             </div>
-            <div class="content">
-              <img src="ml.png"></img>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="sectionHead">
+                <div class="kicker">
+                    <i class="fa-solid fa-bolt"></i
+                    ><span data-i18n="skillsKicker">Skills</span>
+                </div>
+                <h2 class="h2">
+                    <span data-i18n="skillsTitle"
+                        >Tools I use to win deadlines</span
+                    >
+                </h2>
+                <p class="lead" data-i18n="skillsLead">
+                    Filter skills, hover chips, and watch the bars animate in
+                    view.
+                </p>
             </div>
-            <div class="circle"></div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="container">
-          <div class="card">
-            <div class="title">
-              <h3>Tools & Tech</h3>
+
+            <div class="filters">
+                <button class="filterBtn active" data-filter="all">
+                    <i class="fa-solid fa-layer-group"></i
+                    ><span data-i18n="fAll">All</span>
+                </button>
+                <button class="filterBtn" data-filter="frontend">
+                    <i class="fa-brands fa-react"></i
+                    ><span data-i18n="fFront">Frontend</span>
+                </button>
+                <button class="filterBtn" data-filter="backend">
+                    <i class="fa-brands fa-node-js"></i
+                    ><span data-i18n="fBack">Backend</span>
+                </button>
+                <button class="filterBtn" data-filter="tools">
+                    <i class="fa-solid fa-screwdriver-wrench"></i
+                    ><span data-i18n="fTools">Tools</span>
+                </button>
             </div>
-            <div class="content">
-              <img src="git1.png"></img>
+
+            <div class="skillsGrid" id="skillsGrid" aria-live="polite"></div>
+        </section>
+
+        <!-- WORK -->
+        <section class="section" id="work">
+            <div class="sectionHead">
+                <div class="kicker">
+                    <i class="fa-solid fa-briefcase"></i
+                    ><span data-i18n="workKicker">Work</span>
+                </div>
+                <h2 class="h2">
+                    <span data-i18n="workTitle">Experience timeline</span>
+                </h2>
+                <p class="lead" data-i18n="workLead">
+                    Expandable items. Click to open and read impact bullets.
+                </p>
             </div>
-            <div class="circle"></div>
-          </div>
+
+            <div class="timeline" id="timeline"></div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section" id="projects">
+            <div class="sectionHead">
+                <div class="kicker">
+                    <i class="fa-solid fa-layer-group"></i
+                    ><span data-i18n="projectsKicker">Projects</span>
+                </div>
+                <h2 class="h2">
+                    <span data-i18n="projectsTitle"
+                        >Case-studies (tap to open)</span
+                    >
+                </h2>
+                <p class="lead" data-i18n="projectsLead">
+                    Each card opens a modal: goals, stack, highlights, and
+                    links.
+                </p>
+            </div>
+
+            <div class="projectsGrid" id="projectsGrid"></div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <div class="sectionHead">
+                <div class="kicker">
+                    <i class="fa-solid fa-paper-plane"></i
+                    ><span data-i18n="contactKicker">Contact</span>
+                </div>
+                <h2 class="h2">
+                    <span data-i18n="contactTitle"
+                        >Let's build something sharp</span
+                    >
+                </h2>
+                <p class="lead" data-i18n="contactLead">
+                    This demo form shows a success toast (no backend). Copy
+                    email quickly.
+                </p>
+            </div>
+
+            <div class="contactGrid">
+                <div class="card lift">
+                    <div class="cardTitle">
+                        <i class="fa-solid fa-address-card"></i
+                        ><span data-i18n="contactCardT">Details</span>
+                    </div>
+
+                    <div class="infoRow">
+                        <div class="infoIcon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="infoBody">
+                            <div class="infoLabel">Email</div>
+                            <button class="linkBtn" id="emailBtn" type="button">
+                                allivinay9@gmail.com
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="infoRow">
+                        <div class="infoIcon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="infoBody">
+                            <div class="infoLabel" data-i18n="locLabel">
+                                Location
+                            </div>
+                            <div class="infoText" data-i18n="locVal">
+                                USA
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="infoRow">
+                        <div class="infoIcon">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                        <div class="infoBody">
+                            <div class="infoLabel" data-i18n="linksLabel">
+                                Links
+                            </div>
+                            <div class="miniLinks">
+                                <a
+                                    class="miniA"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><i class="fa-brands fa-github"></i
+                                    >GitHub</a
+                                >
+                                <a
+                                    class="miniA"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><i class="fa-brands fa-linkedin"></i
+                                    >LinkedIn</a
+                                >
+                                <a
+                                    class="miniA"
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener"
+                                    ><i class="fa-solid fa-globe"></i>Site</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="availability">
+                        <div class="availabilityDot" aria-hidden="true"></div>
+                        <span data-i18n="avail"
+                            >Open for: MVPs, dashboards, e-commerce,
+                            automation.</span
+                        >
+                    </div>
+                </div>
+
+                <form class="card lift form" id="contactForm">
+                    <div class="cardTitle">
+                        <i class="fa-solid fa-pen-to-square"></i
+                        ><span data-i18n="formT">Send a message</span>
+                    </div>
+
+                    <div class="row2">
+                        <label class="field">
+                            <span class="label" data-i18n="fName">Name</span>
+                            <input
+                                class="input"
+                                name="name"
+                                placeholder="Your name"
+                                required
+                            />
+                        </label>
+                        <label class="field">
+                            <span class="label" data-i18n="fEmail">Email</span>
+                            <input
+                                class="input"
+                                type="email"
+                                name="email"
+                                placeholder="you@domain.com"
+                                required
+                            />
+                        </label>
+                    </div>
+
+                    <label class="field">
+                        <span class="label" data-i18n="fSubject">Subject</span>
+                        <input
+                            class="input"
+                            name="subject"
+                            placeholder="Project idea / requirement"
+                            required
+                        />
+                    </label>
+
+                    <label class="field">
+                        <span class="label" data-i18n="fMsg">Message</span>
+                        <textarea
+                            class="input area"
+                            name="message"
+                            rows="5"
+                            placeholder="Tell me what you want to build…"
+                            required
+                        ></textarea>
+                    </label>
+
+                    <div class="formActions">
+                        <button class="btn primary magnetic" type="submit">
+                            <i class="fa-solid fa-paper-plane"></i
+                            ><span data-i18n="send">Send</span>
+                        </button>
+                        <button
+                            class="btn ghost magnetic"
+                            type="button"
+                            id="clearForm"
+                        >
+                            <i class="fa-solid fa-eraser"></i
+                            ><span data-i18n="clear">Clear</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footLeft">
+                <span class="footBrand"
+                    ><i class="fa-solid fa-terminal"></i> Vinay Alli</span
+                >
+                <span class="footDot">•</span>
+                <span id="clock">--</span>
+            </div>
+            <div class="footRight">
+                <button class="linkBtn" id="backTop" type="button">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    <span data-i18n="backTop">Top</span>
+                </button>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Project Modal -->
+    <div
+        class="modalWrap"
+        id="modalWrap"
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+    >
+        <div class="modal" role="document">
+            <div class="modalHead">
+                <div class="modalTitle" id="modalTitle">Project</div>
+                <button
+                    class="iconBtn ghost"
+                    id="closeModal"
+                    type="button"
+                    title="Close"
+                >
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            <div class="modalBody">
+                <div class="modalCover" id="modalCover"></div>
+                <div class="modalMeta" id="modalMeta"></div>
+                <div class="modalDesc" id="modalDesc"></div>
+                <div class="modalBullets" id="modalBullets"></div>
+                <div class="modalLinks" id="modalLinks"></div>
+            </div>
         </div>
-      </div>
     </div>
-    
 
-  </div>
-
-
-
-
-
-
-
-
-      
-   <!-- PROJECTS SERVICE CARD -->
-<section id="projects" class="projects-service-sec pt-5 pb-5">
-  <div class="container">
-    <div class="row">
-      <div class="section-header text-center">
-        <h2 class="fw-bold fs-1">
-          My
-          <span class="b-class-secondary">Projects </span>
-        </h2>
-        <p class="sec-icon"><i class="fa fa-sitemap" aria-hidden="true"></i></p>
-      </div>
-    </div>
-    <div class="row mt-5 mt-md-4 row-cols-1 row-cols-sm-1 row-cols-md-3 justify-content-center">
-      <div class="col">
-        <div class="project-card">
-          <div class="icon-wrapper">
-            <i class="fa fa-code" aria-hidden="true"></i>
-          </div>
-          <h3>Socialite</h3>
-          <p>
-            Socialite is a simple and easy-to-use social media app built with React and Firebase.<a href="https://react-app-65a17.web.app/" target="_blank" style="text-decoration: none;"><i class="fa fa-external-link"></i></a>
-
-          </p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="project-card">
-          <div class="icon-wrapper">
-            <i style='font-size:24px' class='fas'>&#xf002;</i>
-          </div>
-          <h3>Discover and Explore Films with Ease</h3>
-          <p>
-            MovieFinder is a cutting-edge React project designed to streamline the process of finding detailed information about movies. <a href="https://vinayalli.github.io/Movie-details/" target="_blank" style="text-decoration: none;"><i class="fa fa-external-link"></i></a>
-          </p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="project-card">
-          <div class="icon-wrapper">
-            <i style='font-size:24px' class='fas'>&#xf0ae;</i>
-          </div>
-          <h3>TaskMaster</h3>
-          <p>
-            Simplify Your Productivity with a Dynamic Todo List. <a href="https://vinayalli.github.io/ToDo-List/" target="_blank" style="text-decoration: none;"><i class="fa fa-external-link"></i></a>
-          </p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="project-card">
-          <div class="icon-wrapper">
-            <i style="font-size:24px" class="fa">&#xf059;</i>
-          </div>
-          <h3>MathQuizPro</h3>
-          <p>
-            Test Your Math Skills and Improve Mental Agility. <a href="https://vinayalli.github.io/Quiz/" target="_blank" style="text-decoration: none;"><i class="fa fa-external-link"></i></a>
-          </p>
-        </div>
-      </div>
-      <div class="col">
-        <div class="project-card">
-          <div class="icon-wrapper">
-            <i style='font-size:24px' class='fas'>&#xf001;</i>
-          </div>
-          <h3>Music Recommendation System using Facial and Speech Emotion Detection</h3>
-          <p>
-            Developed emotion detection and music recommendation system with deep learningtechniques. <a href="https://github.com/viswanadhalli/MusicRecommendationSystem" target="_blank" style="text-decoration: none;"><i class="fa fa-external-link"></i></a>
-          </p>
-        </div>
-      </div>
-      
-      <div class="col">
-        <div class="project-card">
-          <div class="icon-wrapper">
-            <i class="fa fa-comment" aria-hidden="true"></i>
-          </div>
-          <h3>Random Anime Quotes</h3>
-          <p>
-            This project is a web application that generates a random anime quote. <a href="https://vinayalli.github.io/AnimeQuotes/" target="_blank" style="text-decoration: none;"><i class="fa fa-external-link"></i></a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<!-- CONTACT CARD -->
-<div class="contact" id="contact">
-  <h2 class="fw-bold fs-1" style="text-align: center;">
-    Contact
-    <span class="b-class-secondary" style="color: rgb(13, 232, 188);">Me </span>
-  </h2>
-
-  <div class="contact-o">
-
-    <div class="contact1">
-      
-      <h4>Social Media Handles</h4>
-      <div class="handles">
-        <a href="https://www.linkedin.com/in/vinay-viswanadh-alli/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="https://wa.me/918341837274"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/__vinay_alli__/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href=" https://twitter.com/VinayViswanadh?t=2Uf1apwjQWkZ4NNI6ynMnw&s=08 "><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      </div>
-    
-    </div>
-    <div class="contact1">
-      
-      <h4 style="text-align: center;">Address</h4>
-      <div class="handles">
-        <p ><a style="text-decoration: none;" href="https://www.findlatitudeandlongitude.com/l/Jaggayyapeta,-Krishna,-Andhra-Pradesh,-521175,-India/7014225/"><i class="fa fa-map-marker" aria-hidden="true"></i>  Jaggayyapet</p></a>
-      </div>
-    
-    </div>
-       
-    
-  
-  </div>
-  <div class="contact-o">
-  
-    <div class="contact1">
-      
-      <h4 style="text-align: center;">Email</h4>
-      <div class="handles">
-        <a  href="mailto:allivinay2001@gmail.com"><p><i class="fa fa-envelope-o" aria-hidden="true"></i></p></a>
-        <p style="padding-left: 4px;">allivinay2001@gmail.com</p>
-      </div>
-    
-    </div>
-    <div class="contact1">
-      
-      <h4 style="text-align: center;">Call Me</h4>
-      <div class="handles">
-        <a href="tel:+4733378901"><p><i class="fa fa-mobile" aria-hidden="true"></i></p></a>
-        <p style="padding-left: 4px;">+91-8341837274</p>
-      </div>
-    
-    </div>
-       
-    
-  
-  </div>
-
+    <!-- Toasts -->
+    <div class="toasts" id="toasts" aria-live="polite" aria-atomic="true"></div>
 </div>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><i style="color: white;" class="fa fa-long-arrow-up" aria-hidden="true"></i></button>
-<hr>
-<h5 style="text-align: center;">Thank You <i class="fa fa-heart" aria-hidden="true"></i></h5>
-<script>
-  let mybutton = document.getElementById("myBtn");
-  
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  }
-  
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
 
-  </script>      
+<script src="./script.js" defer></script>
 </body>
 </html>
