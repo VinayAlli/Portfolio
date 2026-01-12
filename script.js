@@ -1,14 +1,4 @@
-/* ---------------------------
-   NeonCraft Portfolio (CodePen)
-   - Theme + EN/HI toggle
-   - Scroll spy
-   - Drawer + Modal
-   - Particles canvas
-   - Skill filter + bar animation
-   - Timeline accordion
-   - Toasts + copy helpers
-   - Magnetic micro-interactions
----------------------------- */
+
 
 const $ = (q, root = document) => root.querySelector(q);
 const $$ = (q, root = document) => [...root.querySelectorAll(q)];
@@ -99,15 +89,16 @@ const ship = (feature) => ({
         ],
         projects: [
             {
-                title: "Secure Microservices API Platform",
-                desc: "Spring Boot microservices with JWT-based security and clean service boundaries for enterprise workflows.",
+                title: "Rise of Spring AI and LangChain4j: Java’s AI Revolution",
+                desc: "Integrating Generative AI into the Java ecosystem using familiar Spring patterns and type-safe orchestration for enterprise-grade intelligence.",
                 cover: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=70",
-                stack: ["Java", "Spring Boot", "Spring Security", "JWT", "REST"],
-                meta: "Focus: security + reliability • Outcome: consistent, production-ready APIs",
+                stack: ["Java", "Spring AI", "LangChain4j", "Spring Boot", "LLMs"],
+                meta: "Focus: AI Orchestration + Enterprise Stability • Outcome: Intelligent, production-ready applications",
                 bullets: [
-                    "Role-based access control with Spring Security + JWT.",
-                    "Standardized validation, error handling, and structured logging.",
-                    "API documentation using Swagger/OpenAPI patterns.",
+                    "Unified AI abstractions for seamless switching between OpenAI, Azure, and local models.",
+                    "Type-safe AI services and agentic workflows built from the ground up for the JVM.",
+                    "Integration of RAG (Retrieval-Augmented Generation) with enterprise vector databases.",
+                    "Maintainable AI logic using standard Spring dependency injection and configuration patterns."
                 ],
                 links: [
                     { label: "GitHub (add link)", href: "#" },
