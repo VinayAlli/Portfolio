@@ -151,7 +151,7 @@ const ship = (feature) => ({
 /* ---------------- i18n (EN/HI) ---------------- */
 const dict = {
     en: {
-        brandSub: "Senior Software Developer",
+        brandSub: "Senior Software Engineer",
         navHome: "Home",
         navAbout: "About",
         navSkills: "Skills",
@@ -232,7 +232,7 @@ const dict = {
         backTop: "Top",
     },
     hi: {
-        brandSub: "Senior Software Developer",
+        brandSub: "Senior Software Engineer",
         navHome: "Home",
         navAbout: "About",
         navSkills: "Skills",
