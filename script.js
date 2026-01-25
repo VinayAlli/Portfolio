@@ -39,8 +39,8 @@ const ship = (feature) => ({
         ],
         timeline: [
             {
-                role: "Senior Software Developer",
-                org: "Company One (USA)",
+                role: "Senior Software Engineer",
+                org: "Cigna Healthcare (USA)",
                 period: "May 2024 – Present",
                 icon: "fa-solid fa-briefcase",
                 bullets: [
@@ -51,8 +51,8 @@ const ship = (feature) => ({
                 ],
             },
             {
-                role: "Software Developer",
-                org: "Company Two (USA)",
+                role: "Software Engineer",
+                org: "Storable (USA)",
                 period: "May 2022 – Dec 2023",
                 icon: "fa-solid fa-briefcase",
                 bullets: [
@@ -63,8 +63,8 @@ const ship = (feature) => ({
                 ],
             },
             {
-                role: "Java Developer",
-                org: "South State Bank (India)",
+                role: "Software Developer",
+                org: "South State Bank (USA)",
                 period: "Feb 2021 – May 2022",
                 icon: "fa-solid fa-building-columns",
                 bullets: [
@@ -75,7 +75,7 @@ const ship = (feature) => ({
                 ],
             },
             {
-                role: "Software Engineer",
+                role: "Software Developer",
                 org: "Uber (India)",
                 period: "Feb 2018 – Jan 2021",
                 icon: "fa-solid fa-industry",
