@@ -759,7 +759,7 @@ updateClock();
 
 /* ---------------- Resume button (demo) ---------------- */
 $("#openResume").addEventListener("click", () => {
-    toast("Resume", "Replace with your PDF link / drive link.");
+    toast("Resume", "Contact : 913-543-8122");
 });
 
 /* ---------------- Magnetic buttons ---------------- */
