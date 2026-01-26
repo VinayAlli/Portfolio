@@ -40,7 +40,7 @@ const ship = (feature) => ({
         timeline: [
             {
                 role: "Senior Software Engineer",
-                org: "Cigna Healthcare (USA)",
+                org: "CSL Healthcare (USA)",
                 period: "May 2024 – Present",
                 icon: "fa-solid fa-briefcase",
                 bullets: [
@@ -76,7 +76,7 @@ const ship = (feature) => ({
             },
             {
                 role: "Software Developer",
-                org: "Uber (India)",
+                org: "Uber (USA)",
                 period: "Feb 2018 – Jan 2021",
                 icon: "fa-solid fa-industry",
                 bullets: [
